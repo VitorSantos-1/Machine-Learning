@@ -1,43 +1,66 @@
-# MACHINE-LEARNING
-Analytics
+<h1 align="center">🤖 Machine Learning — Regressão Linear</h1>
 
+<p align="center">
+  <em>Construção de um modelo preditivo do zero: do tratamento dos dados à avaliação do modelo.</em>
+</p>
 
-Este projeto tem como objetivo explorar os conceitos fundamentais de Machine Learning, utilizando técnicas de preparação de dados, modelagem e avaliação dos modelos. O foco é proporcionar uma compreensão clara sobre o processo de construção de modelos preditivos.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" alt="Plotly"/>
+</p>
 
-### 1. **Importação de Bibliotecas**
-   - O primeiro passo do notebook envolve a importação de bibliotecas essenciais. Isso inclui ferramentas para manipulação de dados, visualização e algoritmos de Machine Learning. Essas bibliotecas são fundamentais para facilitar as operações e cálculos necessários ao longo do projeto.
+---
 
-### 2. **Carregamento dos Dados**
-   - Após importadas as bibliotecas, o próximo passo é carregar os dados a partir de uma fonte, geralmente um arquivo CSV. O carregamento dos dados é crucial, pois fornece a base sobre a qual todas as análises e modelagens serão realizadas.
+## 🎯 Objetivo
 
-### 3. **Visualização Inicial dos Dados**
-   - Uma vez que os dados estão carregados, o notebook realiza uma visualização inicial para entender a estrutura e o conteúdo dos dados. Isso pode incluir a exibição das primeiras linhas do conjunto de dados e a verificação de estatísticas descritivas. Essa etapa é importante para identificar características gerais do conjunto, como a presença de dados numéricos e categóricos, bem como entender a distribuição das variáveis.
+Explorar os conceitos fundamentais de **Machine Learning**, aplicando técnicas de preparação de dados, modelagem e avaliação. O projeto usa **Regressão Linear** (scikit-learn) para construir um modelo preditivo e entender, na prática, todo o fluxo de um problema supervisionado.
 
-### 4. **Análise de Dados Faltantes**
-   - A próxima etapa é verificar se existem valores faltantes nos dados. Isso é feito para garantir que o conjunto de dados esteja completo e para decidir como proceder com os dados ausentes. A presença de valores faltantes pode impactar a performance do modelo se não forem tratados adequadamente.
+## 🔬 Fluxo do projeto
 
-### 5. **Pré-processamento dos Dados**
-   - O pré-processamento é uma etapa crítica que envolve a preparação dos dados para a modelagem. Isso pode incluir a conversão de variáveis categóricas em numéricas, utilizando técnicas de codificação, bem como a normalização ou padronização das variáveis numéricas.
-   - Essa etapa também pode envolver a remoção de duplicatas e o tratamento de dados inconsistentes, garantindo que o conjunto de dados esteja em um formato adequado para análise.
+| # | Etapa | Descrição |
+|---|-------|-----------|
+| 1 | **Importação de bibliotecas** | pandas, NumPy, seaborn, Plotly e scikit-learn. |
+| 2 | **Carregamento dos dados** | Leitura da base a partir de arquivo. |
+| 3 | **Exploração inicial** | Primeiras linhas, estatísticas descritivas e estrutura dos dados. |
+| 4 | **Dados faltantes** | Verificação e tratamento de valores ausentes. |
+| 5 | **Pré-processamento** | Codificação de variáveis, padronização e limpeza. |
+| 6 | **Split treino/teste** | Divisão dos dados com `train_test_split`. |
+| 7 | **Modelagem** | Treinamento de um modelo de `LinearRegression`. |
+| 8 | **Avaliação** | Medição de desempenho com **R² (`r2_score`)**. |
+| 9 | **Predições** | Predições manuais e interpretação dos resultados. |
+| 10 | **Visualização** | Gráficos para comunicar os achados. |
 
-### 6. **Divisão do Conjunto de Dados**
-   - Os dados são então divididos em conjuntos de treinamento e teste. Essa divisão é importante para permitir que o modelo aprenda a partir de um subconjunto de dados (conjunto de treinamento) enquanto testa sua capacidade de generalização em dados não vistos (conjunto de teste).
+## 🛠️ Ferramentas
 
-### 7. **Escolha do Modelo de Machine Learning**
-   - O projeto explora diferentes algoritmos de Machine Learning, selecionando um apropriado para a tarefa em questão. A escolha do modelo pode depender do tipo de problema (classificação, regressão, etc.) e das características dos dados.
-   - A análise pode incluir uma breve discussão sobre os critérios para a seleção desse modelo.
+- **Linguagem:** Python
+- **Bibliotecas:** scikit-learn, pandas, NumPy, seaborn, Matplotlib, Plotly
 
-### 8. **Treinamento do Modelo**
-   - Após a seleção do modelo, ele é treinado utilizando o conjunto de dados de treinamento. Essa etapa envolve a alimentação do modelo com os dados, permitindo que ele aprenda padrões e relações dentro do conjunto de dados.
+## 🚀 Como executar
 
-### 9. **Avaliação do Modelo**
-   - Após o treinamento, o modelo é avaliado utilizando o conjunto de dados de teste. A avaliação é feita através de métricas que indicam o desempenho do modelo, como acurácia, precisão, recall, entre outras. Essa análise ajuda a entender quão bem o modelo pode prever novos dados.
+```bash
+# Instalar dependências
+pip install scikit-learn pandas numpy seaborn matplotlib plotly
 
-### 10. **Análise da Matriz de Confusão**
-   - A matriz de confusão é utilizada para ilustrar o desempenho do modelo, mostrando a quantidade de previsões corretas e incorretas realizadas. Isso fornece uma visão detalhada sobre como o modelo se comporta em relação a diferentes classes.
+# Abrir o notebook
+jupyter notebook 16_MACHINE_LEARNING.ipynb
+```
 
-### 11. **Visualização dos Resultados**
-   - Gráficos e visualizações são criados para facilitar a interpretação dos resultados e para ajudar a comunicar os achados de forma visual. Isso pode incluir gráficos que demonstram a distribuição das previsões e a eficácia do modelo.
+## 📂 Arquivos
 
-### 12. **Conclusão**
-   - Por fim, o projeto encerra com uma discussão geral sobre os resultados obtidos, incluindo reflexões sobre o desempenho do modelo e considerações para futuras melhorias. Isso pode incluir sugestões de experimentação com diferentes algoritmos, ajuste de hiperparâmetros, ou coletar dados adicionais.
+| Arquivo | Descrição |
+|---------|-----------|
+| [`16_MACHINE_LEARNING.ipynb`](16_MACHINE_LEARNING.ipynb) | Notebook completo, da preparação dos dados à avaliação do modelo. |
+
+## ✅ Conclusão
+
+O projeto percorre todas as etapas de um pipeline de Machine Learning supervisionado, encerrando com reflexões sobre o desempenho do modelo e possíveis melhorias — como ajuste de hiperparâmetros e experimentação com outros algoritmos.
+
+---
+
+<p align="center">
+  <sub>Feito por <a href="https://github.com/VitorSantos-1">Vitor Santos</a> · 🤖 Machine Learning</sub>
+</p>
