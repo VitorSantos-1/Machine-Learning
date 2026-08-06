@@ -1,4 +1,4 @@
-<h1 align="center">🤖 Machine Learning — Regressão Linear</h1>
+<h1 align="center"> Machine Learning, Regressão Linear</h1>
 
 <p align="center">
   <em>Construção de um modelo preditivo do zero: do tratamento dos dados à avaliação do modelo.</em>
